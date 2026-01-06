@@ -1,5 +1,4 @@
 public/
-
-static/
-
-layouts/
+resources/
+.DS_Store
+.hugo_build.lock

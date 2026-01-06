@@ -1,0 +1,54 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container { text-align: center; max-width: 800px; width: 100%; }
+
+.blink-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(48px, 10vw, 80px);
+    color: #ff0000;
+    animation: blink 1s step-end infinite;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+.wavy-container { width: 100%; margin: 20px 0 50px 0; }
+.wavy-svg { width: 100%; height: 80px; }
+.wavy-text { font-family: 'Times New Roman', Times, serif; font-size: 28px; font-weight: bold; fill: #ff0000; }
+
+.shirt-section { margin: 40px 0; }
+.shirt-image { margin-bottom: 30px; }
+.shirt-image img { max-width: 350px; width: 100%; border: 3px solid #ff0000; box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+
+.buy-section { margin-top: 20px; }
+
+.paypal-classic-btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #ffffcc 0%, #ffcc00 100%);
+    border: 2px solid #996600;
+    border-radius: 5px;
+    padding: 12px 40px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 3px rgba(0,0,0,0.3);
+}
+
+.paypal-classic-btn:hover { background: linear-gradient(to bottom, #ffff99 0%, #ffcc33 100%); }
+
+.sparkles { margin-top: 50px; font-size: 24px; color: #ff0000; animation: sparkle 1.5s ease-in-out infinite; letter-spacing: 10px; }
+@keyframes sparkle { 0%, 100% { opacity: 1; text-shadow: 0 0 5px #ff0000; } 50% { opacity: 0.7; text-shadow: 0 0 20px #ff0000; } }
+```
